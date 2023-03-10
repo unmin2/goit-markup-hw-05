@@ -25,11 +25,13 @@
             ><span class="web">WEB</span>STUDIO</a
           >
           <ul class="navigation">
-            <li class="items"><a href="" class="link">Studio</a></li>
+            <li class="items"><a href="" class="link">Studio</a>
+            </li>
             <li class="items">
               <a href="portfolio.html" class="link">Portfolio</a>
             </li>
-            <li class="items"><a href="" class="link">Contacts</a></li>
+            <li class="items"><a href="" class="link">Contacts</a>
+          </li>
           </ul>
         </nav>
         <address class="address-list">
@@ -50,11 +52,20 @@
     <main>
       <section class="section-first">
         <div class="conteiner">
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <button data-modal-close class="btn-close" >
+               <svg class="btn-clo"> 
+                <use class="svg-close" href="./images/icons.svg/close.svg"></use>
+               </svg>
+              </button>
+            </div>
+          </div>
           <h1 class="first-h">
             Effective Solution <br />
             Your Business
           </h1>
-          <button type="button" class="button-order">Order Service</button>
+          <button data-modal-open type="button" class="button-order">Order Service</button>
         </div>
       </section>
       <section class="section-features">
@@ -96,7 +107,7 @@
               <svg class="icon-img">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-diagram1"
-                  ></use>
+                    ></use>
                 </svg>
              </div>
                  <h3 class="section-list">Diligence</h3>
@@ -431,5 +442,6 @@
       </div>
 
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
